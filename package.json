@@ -1,0 +1,24 @@
+{
+    "name": "atto-vscode",
+    "displayName": "atto-vscode",
+    "description": "Language support for the atto programming language in Visual Studio Code.",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "atto",
+            "extensions": [".atto"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "atto",
+            "scopeName": "source.atto",
+            "path": "./syntaxes/atto.tmLanguage.json"
+        }]
+    }
+}
