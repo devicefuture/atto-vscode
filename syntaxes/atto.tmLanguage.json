@@ -102,7 +102,7 @@
 				},
 				{
 					"name": "keyword.operator.logical.atto",
-					"match": "\b(?:and|or|xor|not)\b"
+					"match": "\\b(?:and|or|xor|not)\\b"
 				}
 			]
 		},
