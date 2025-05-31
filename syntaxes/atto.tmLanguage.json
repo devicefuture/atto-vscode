@@ -19,8 +19,13 @@
 					"match": "#.*"
 				},
 				{
-					"name": "comment.line.rem.atto",
-					"match": "(?i)^\\s*rem( .*)?"
+					"name": "entity.comment.line.rem.atto",
+					"match": "(?i)^\\s*[0-9]*\\s*(rem( .*)?)",
+					"captures": {
+						"1": {
+							"name": "comment.line.rem.atto"
+						}
+					}
 				}
 			]
 		},
@@ -35,8 +40,13 @@
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.control.atto",
-					"match": "(?i)\\s*\\b(goto|gosub|return|if|else|end|for|to|step|next|repeat|while|until|loop|break|continue|stop|delay)\\b"
+					"name": "entity.keyword.control.atto",
+					"match": "(?i)\\s*(^[0-9]+)?\\s*\\b(goto|gosub|return|if|else|end|for|to|step|next|repeat|while|until|loop|break|continue|stop|delay)\\b",
+					"captures": {
+						"2": {
+							"name": "keyword.control.atto"
+						}
+					}
 				},
 				{
 					"name": "entity.name.command.declaration.atto",
@@ -52,7 +62,7 @@
 				},
 				{
 					"name": "entity.name.command.call.atto",
-					"match": "(?i)^\\s*([a-z_]\\w*[$%]?)(?!\\w*[$%]?\\s*[=\\[])",
+					"match": "(?i)^\\s*[0-9]*\\s*([a-z_]\\w*[$%]?)(?!\\w*[$%]?\\s*[=\\[])",
 					"captures": {
 						"1": {
 							"name": "entity.name.function.command.atto"
@@ -72,6 +82,10 @@
 		},
 		"numbers": {
 			"patterns": [
+				{
+					"name": "entity.other.lineNumber.atto",
+					"match": "^\\s*[0-9]"
+				},
 				{
 					"name": "constant.numeric.hexadecimal.atto",
 					"match": "(?i)\\b0x[0-9a-f]+\\b"
