@@ -1,6 +1,7 @@
 {
     "name": "atto-vscode",
-    "displayName": "atto-vscode",
+    "displayName": "atto",
+    "publisher": "DeviceFuture",
     "description": "Language support for the atto programming language in Visual Studio Code.",
     "version": "0.1.0",
     "engines": {
