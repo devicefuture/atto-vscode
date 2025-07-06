@@ -41,7 +41,7 @@
 			"patterns": [
 				{
 					"name": "entity.keyword.control.atto",
-					"match": "(?i)\\s*(^[0-9]+)?\\s*\\b(goto|gosub|return|if|else|end|for|to|step|next|repeat|while|until|loop|break|continue|stop|delay)\\b",
+					"match": "(?i)\\s*(^[0-9]+)?\\s*\\b(goto|gosub|return|if|else|end|for|to|step|next|repeat|while|until|loop|break|continue|stop|delay|dim|with)\\b",
 					"captures": {
 						"2": {
 							"name": "keyword.control.atto"
