@@ -41,7 +41,7 @@
 			"patterns": [
 				{
 					"name": "entity.keyword.control.atto",
-					"match": "(?i)\\s*(^[0-9]+)?\\s*\\b(goto|gosub|return|if|else|end|for|to|step|next|repeat|while|until|loop|break|continue|stop|delay|dim|with)\\b",
+					"match": "(?i)\\s*(^[0-9]+)?\\s*\\b(goto|gosub|return|if|else|end|for|to|step|next|repeat|while|until|loop|break|continue|stop|delay|dim|with|extload|as)\\b",
 					"captures": {
 						"2": {
 							"name": "keyword.control.atto"
@@ -62,7 +62,7 @@
 				},
 				{
 					"name": "entity.name.command.call.atto",
-					"match": "(?i)^\\s*[0-9]*\\s*([a-z_]\\w*[$%]?)(?!\\w*[$%]?\\s*[=\\[])",
+					"match": "(?i)^\\s*[0-9]*\\s*([a-z_]\\w*(\\.[a-z_]\\w*)?[$%]?)(?!\\w*[$%]?\\s*[=\\[])",
 					"captures": {
 						"1": {
 							"name": "entity.name.function.command.atto"
