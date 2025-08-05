@@ -20,7 +20,7 @@
 				},
 				{
 					"name": "entity.comment.line.rem.atto",
-					"match": "(?i)^\\s*[0-9]*\\s*(rem( .*)?)",
+					"match": "(?i)^\\s*[0-9]*\\s*(rem ( .*)?)",
 					"captures": {
 						"1": {
 							"name": "comment.line.rem.atto"
