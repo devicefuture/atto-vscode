@@ -4,9 +4,9 @@
 	"patterns": [
 		{"include": "#comments"},
 		{"include": "#atoms"},
+		{"include": "#operators"},
 		{"include": "#keywords"},
 		{"include": "#numbers"},
-		{"include": "#operators"},
 		{"include": "#doubleQuotedStrings"},
 		{"include": "#singleQuotedStrings"},
 		{"include": "#backtickStrings"}
@@ -34,6 +34,22 @@
 				{
 					"name": "constant.language.boolean.atto",
 					"match": "(?i)\\b(true|false)\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.atto",
+					"match": "\\+|-|\\*|\\/|\\^|\\b(div|mod)\\b|&|\\||~|;"
+				},
+				{
+					"name": "keyword.operator.comparator.atto",
+					"match": "!=|<=|>=|=|<|>"
+				},
+				{
+					"name": "keyword.operator.logical.atto",
+					"match": "\\b(?:and|or|xor|not)\\b"
 				}
 			]
 		},
@@ -101,22 +117,6 @@
 				{
 					"name": "constant.numeric.scientific.atto",
 					"match": "(?i)\\b([0-9]+\\.?[0-9]*|[0-9]*\\.?[0-9]+)([eE][+-]?[0-9]+(?!\\.))?\\b"
-				}
-			]
-		},
-		"operators": {
-			"patterns": [
-				{
-					"name": "keyword.operator.atto",
-					"match": "\\+|-|\\*|\\/|\\^|\\b(div|mod)\\b|&|\\||~|;"
-				},
-				{
-					"name": "keyword.operator.comparator.atto",
-					"match": "!=|<=|>=|=|<|>"
-				},
-				{
-					"name": "keyword.operator.logical.atto",
-					"match": "\\b(?:and|or|xor|not)\\b"
 				}
 			]
 		},
